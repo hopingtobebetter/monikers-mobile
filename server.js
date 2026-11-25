@@ -158,8 +158,8 @@ function assignClueGiver(prefix = "", preferredPlayerId) {
     : `Waiting for a player on ${state.teams[team]} to connect.`;
   state.lastAction = prefix + message;
 }
-function prepareRound(prefix = "") {
-  state.activeTeam = 0;
+function prepareRound(startingTeam = 0, prefix = "") {
+  state.activeTeam = startingTeam;
   roundStartScores = [...state.scores];
   roundSkips.clear();
   clueOrder = [[], []];
@@ -207,7 +207,8 @@ function endTurn(reason) {
   if (state.round < state.roundCount) {
     state.round += 1;
     state.turnNumber += 1;
-    prepareRound(`${reason} `);
+    const startingTeam = state.scores[0] <= state.scores[1] ? 0 : 1;
+    prepareRound(startingTeam, `${reason} `);
   } else {
     state.status = "finished";
     state.lastAction = `${reason} Game over!`;

@@ -45,7 +45,7 @@ To try running the server on Android, install [Termux](https://github.com/termux
 - The selected clue giver sees the phrase on their phone and taps **Got it** or **Skip**.
 - Got it awards one point and removes the phrase from the deck. Skip moves it to the back of the deck.
 - The clue giver can undo their latest tap within four seconds or until the next action or turn change. The final guess gives the clue giver four seconds to undo before the game advances automatically.
-- Team A starts each round. When the timer expires or the host ends the turn, the other team takes over the remaining deck in the same round.
+- Team A starts Round 1. In later rounds, the team with the lower total score starts, and Team A starts if the scores are tied. When the timer expires or the host ends the turn, the other team takes over the remaining deck in the same round.
 - The round ends once every card has been guessed. The full deck is automatically reshuffled for the next round, and the newly selected clue giver starts its first timer when ready. Clearing the final round ends the game.
 - Players see the current rule on their phones. Round 1 allows descriptions and gestures. Round 2 allows one word only. Round 3 allows acting and sound effects without words.
 - After the final round, players can leave or open a fresh lobby with the same team names, number of rounds, and turn length. The player who opens it enters the lobby, and the rest of the group can join with the new PIN.

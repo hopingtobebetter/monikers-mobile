@@ -20,6 +20,7 @@
 - Each team gets a shuffled clue-giver order per round. The next clue giver is assigned automatically at the handoff and starts the timer from their phone.
 - The host dashboard and big-screen view show the active round and team.
 - Clearing the deck advances automatically to the next round or finishes the game after the final round. Players see a short rule for each round on their phones.
+- After Round 1, the team with the lower total score opens the next round. Team A opens when the scores are tied.
 - The clue giver's **Got it · +1 point** button is full-width and green. **Skip phrase** is smaller, outlined, and spaced farther away.
 
 ### Fixed
